@@ -5,4 +5,4 @@
 #/my-redirect  /              302
 
 # Rewrite a path
-#/pass-through /index.html    200
+/404.html /index.html    200
