@@ -1,8 +1,1 @@
-# Redirect with a 301
-#/home         /              301
 
-# Redirect with a 302
-#/my-redirect  /              302
-
-# Rewrite a path
-/404.html /index.html    200
