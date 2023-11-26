@@ -1,1 +1,2 @@
-
+# Redirects from what the browser requests to what we serve
+/exam              https://logicloom.netlify.app/maintenance
