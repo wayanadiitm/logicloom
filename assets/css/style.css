@@ -1200,6 +1200,7 @@ h6 {
 --------------------------------------------------------------*/
 #supporters {
   padding: 60px 0;
+  background: url('/assets/img/supporters/background.jpg') center/cover no-repeat;
 }
 
 #supporters .supporters-wrap {
