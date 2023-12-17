@@ -1,7 +1,7 @@
 # Redirects from what the browser requests to what we serve
 /round1            https://logicloom.netlify.app/maintenance
 /round2            https://logicloom.netlify.app/maintenance
-/register          https://margazhi.iitmparadox.org
+/register          https://iitmparadox.org
 /rules             https://docs.google.com/document/d/1KdGQGpmP-bQCnYBq3JkHOvFktHJPmYjxmn9TJkM-ZLE/edit?usp=sharing
 /brochure          https://logicloom.netlify.app
 /banner            https://logicloom.netlify.app/assets/img/banners/1.png
