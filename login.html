@@ -181,19 +181,42 @@ height:300px;
 border-radius:5px;
 }	
 </style>
- <style>
+<style>
     #alert {
       position: fixed;
       top: 10px;
       right: 10px;
       display: none;
       max-width: 300px;
-      z-index: 1000; 
+      z-index: 1000; /* Adjust the z-index based on your layout */
+      opacity: 0;
+      animation: fadeInOut 1s ease-in-out;
     }
+
+    /* Style the close button */
     #alert .close {
       cursor: pointer;
     }
-  </style>	
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      25% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      75% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+    }
+  </style> 	
 <style>
 body
     {
@@ -218,10 +241,11 @@ body
 <div class="mb-4">
 <h3>LogicLooM Participants Portal</h3>
 <p class="mb-4">Sign in</p>
-<div class="alert alert-success" id="alert">You have already submitted the exam once.
+<div class="alert alert-success" id="alert">
 <button type="button" class="close" aria-label="Close" onclick="closeAlert()">
 <span aria-hidden="true">&times;</span>
-</button>
+</button>	
+You have already submitted the exam once.
 </div>	
 </div>
 <form action="" method="post">
@@ -282,7 +306,7 @@ $(function() {
 
 });  
 </script>
- <script>
+<script>
     // Show the alert on page load
     document.addEventListener('DOMContentLoaded', function() {
       showAndAutoCloseAlert();
@@ -290,7 +314,9 @@ $(function() {
 
     // Function to show the alert and auto-close after 5 seconds
     function showAndAutoCloseAlert() {
-      document.getElementById('alert').style.display = 'block';
+      var alertElement = document.getElementById('alert');
+      alertElement.style.display = 'block';
+      alertElement.style.animationName = 'fadeInOut';
 
       // Auto-close after 5 seconds
       setTimeout(function() {
@@ -300,7 +326,12 @@ $(function() {
 
     // Function to close the alert
     function closeAlert() {
-      document.getElementById('alert').style.display = 'none';
+      var alertElement = document.getElementById('alert');
+      alertElement.style.animationName = '';
+      alertElement.style.animationName = 'fadeInOut-reverse';
+      setTimeout(function() {
+        alertElement.style.display = 'none';
+      }, 1000);
     }
   </script>	
 </body>
