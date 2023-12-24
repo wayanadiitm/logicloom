@@ -195,6 +195,26 @@ else if (document.all&&!document.getElementById){
 document.onmousedown=clickIE4;
 }
 document.oncontextmenu=new Function("return false")
+</script>
+<script>
+  $(document).ready(function () {
+    $('.form-control').on('focus', function () {
+      $(this).closest('.form-group').addClass('focus');
+    });
+
+    $('.form-control').on('blur', function () {
+      if ($(this).val().length === 0) {
+        $(this).closest('.form-group').removeClass('focus');
+      }
+    });
+
+    // Check for pre-filled inputs on document ready
+    $('.form-control').each(function () {
+      if ($(this).val().length > 0) {
+        $(this).closest('.form-group').addClass('focus');
+      }
+    });
+  });
 </script>  
 </body>
 </html>  
