@@ -181,6 +181,19 @@ height:300px;
 border-radius:5px;
 }	
 </style>
+ <style>
+    #alert {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      display: none;
+      max-width: 300px;
+      z-index: 1000; 
+    }
+    #alert .close {
+      cursor: pointer;
+    }
+  </style>	
 <style>
 body
     {
@@ -205,7 +218,11 @@ body
 <div class="mb-4">
 <h3>LogicLooM Participants Portal</h3>
 <p class="mb-4">Sign in</p>
-<div class="alert alert-success">You have already submitted the exam once.</div>	
+<div class="alert alert-success" id="alert">You have already submitted the exam once.
+<button type="button" class="close" aria-label="Close" onclick="closeAlert()">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>	
 </div>
 <form action="" method="post">
 <div class="form-group first">
@@ -264,6 +281,27 @@ $(function() {
 	});
 
 });  
-</script>  
+</script>
+ <script>
+    // Show the alert on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      showAndAutoCloseAlert();
+    });
+
+    // Function to show the alert and auto-close after 5 seconds
+    function showAndAutoCloseAlert() {
+      document.getElementById('alert').style.display = 'block';
+
+      // Auto-close after 5 seconds
+      setTimeout(function() {
+        closeAlert();
+      }, 5000);
+    }
+
+    // Function to close the alert
+    function closeAlert() {
+      document.getElementById('alert').style.display = 'none';
+    }
+  </script>	
 </body>
-</html>  
+</html>
