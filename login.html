@@ -307,21 +307,19 @@ $(function() {
 });  
 </script>
 <script>
-    // Show the alert on page load
     document.addEventListener('DOMContentLoaded', function() {
       showAndAutoCloseAlert();
     });
 
-    // Function to show the alert and auto-close after 5 seconds
     function showAndAutoCloseAlert() {
       var alertElement = document.getElementById('alert');
       alertElement.style.display = 'block';
       alertElement.style.animationName = 'fadeInOut';
 
-      // Auto-close after 5 seconds
+      // Auto-close after 10 seconds
       setTimeout(function() {
         closeAlert();
-      }, 5000);
+      }, 10000);
     }
 
     // Function to close the alert
