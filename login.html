@@ -137,7 +137,18 @@ h2 {
   position: absolute;
   z-index: -1;
   opacity: 0; }
-</style> 
+</style>
+<style>
+  .img-fluid {
+    transition: transform 0.3s ease-in-out;
+  }
+  .img-fluid:hover {
+  transform: rotate(-5deg);
+}
+.img-fluid:hover {
+  transform: rotate(5deg);
+}
+</style>  
 </head>
 <body>
 <div class="content">
@@ -197,24 +208,19 @@ document.onmousedown=clickIE4;
 document.oncontextmenu=new Function("return false")
 </script>
 <script>
-  $(document).ready(function () {
-    $('.form-control').on('focus', function () {
-      $(this).closest('.form-group').addClass('focus');
-    });
+$(function() {
+	'use strict';
+	
+  $('.form-control').on('input', function() {
+	  var $field = $(this).closest('.form-group');
+	  if (this.value) {
+	    $field.addClass('field--not-empty');
+	  } else {
+	    $field.removeClass('field--not-empty');
+	  }
+	});
 
-    $('.form-control').on('blur', function () {
-      if ($(this).val().length === 0) {
-        $(this).closest('.form-group').removeClass('focus');
-      }
-    });
-
-    // Check for pre-filled inputs on document ready
-    $('.form-control').each(function () {
-      if ($(this).val().length > 0) {
-        $(this).closest('.form-group').addClass('focus');
-      }
-    });
-  });
+});  
 </script>  
 </body>
 </html>  
