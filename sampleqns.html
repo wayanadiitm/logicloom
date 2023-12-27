@@ -144,20 +144,20 @@ Dive into the captivating realm of an 8x8 chessboard, where numbers from 1 to 64
         <i class="bi bi-patch-question-fill"></i> Data Scientists tackle a wide range of real-life problems using data and various techniques. Alfred was given a task to classify a corpora
         of some 20k tweets scraped from the web-platform X, into some categories. Now, the texts contained various irrelevant characters (emogis, punctuations, tags, links, etc) and he decided to do some data cleaning in order to optimise the model's
         performance.
-        <pre>
-        import pandas as pd
-        import re
-        import emoji
-        data = pd.read_csv('/content/tweets.csv') #Reading the corpora
-        def preprocess_tweet(tweet):
-          tweet = tweet.lower() #Step-1
-          tweet = re.sub(r'http\S+|www\S+', '', tweet) #Step-2
-          tweet = ''.join(c for c in tweet if c not in emoji.UNICODE_EMOJI) #Step-3
-          tweet = re.sub(r'[^a-zA-Z0-9\s]', '', tweet) #Step-4
-          return tweet #newly cleaned tweets
-        data['tweet'] = data['tweet'].apply(preprocess_tweet)  
-        </pre>
-        According to you, which among the steps performed is not rationally correct and will reduce the model efficiency?      
+<pre>
+import pandas as pd
+import re
+import emoji
+data = pd.read_csv('/content/tweets.csv') #Reading the corpora
+def preprocess_tweet(tweet):
+  tweet = tweet.lower() #Step-1
+  tweet = re.sub(r'http\S+|www\S+', '', tweet) #Step-2
+  tweet = ''.join(c for c in tweet if c not in emoji.UNICODE_EMOJI) #Step-3
+  tweet = re.sub(r'[^a-zA-Z0-9\s]', '', tweet) #Step-4
+  return tweet #newly cleaned tweets
+data['tweet'] = data['tweet'].apply(preprocess_tweet)  
+</pre>
+According to you, which among the steps performed is not rationally correct and might reduce the model efficiency?      
         <br><label>A) Step-1</label>
         <br><label>B) Step-2</label>
         <br><label>C) Step-3</label>
