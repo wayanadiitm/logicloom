@@ -161,12 +161,13 @@ def preprocess_tweet(tweet):
   tweet = ''.join(c for c in tweet if c not in emoji.UNICODE_EMOJI) #Step-3
   tweet = re.sub(r'[^a-zA-Z0-9\s]', '', tweet) #Step-4
   return tweet #newly cleaned tweets
-data['tweet'] = data['tweet'].apply(preprocess_tweet)  
+data['tweet'] = data['tweet'].apply(preprocess_tweet)
 </pre>
+              
 According to you, which among the steps performed is not rationally correct and might reduce the model efficiency?
         <br>
-              <b>(We feel basic CT concepts should be perfect in order to approach this question. Simply, think! The only stuff that you might not know is what re.sub() does... search
-        the avl. online resources, learn and crack!)</b>
+<i>(We feel basic CT concepts should be perfect in order to approach this question. Simply, think! The only stuff that you might not know is what re.sub() does... search
+        the avl. online resources, learn and crack!)</i>
         <br><label>A) Step-1</label>
         <br><label>B) Step-2</label>
         <br><label>C) Step-3</label>
@@ -175,10 +176,9 @@ According to you, which among the steps performed is not rationally correct and 
         <i class="bi bi-patch-question-fill"></i> Rahul had a dataset containing columns 'Outlook', 'Humidity', 'Wind' and 'Status (Played Football: Yes/No)'.
               Clearly, the independent variables (Outlook, Humidity, and Wind) would decide the dependent variable (i.e. whether to play football or not). He uses the ID3 algorithm
               to build a decision tree from the data, which has been shown below:
-              <br>
               <img src="https://i.postimg.cc/d0D1YxgT/sample2.png" width="430" height="237">
               <br>
-              Further note that a 'Yes' is depicted by a '1' and a 'No' by a '0'. Predict the output (in respective order) if the rows of data provided as input were:<br>
+              Further note that a 'Yes' is depicted by a '1' and a 'No' by a '0'. Predict the output (in respective order) if the rows of data provided as input were:<br><br>
 <pre>
 # COLUMNS: OUTLOOK, HUMIDITY, WIND  
 Sunny, Normal, Weak #Row1
