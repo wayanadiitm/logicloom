@@ -161,14 +161,28 @@ def preprocess_tweet(tweet):
 data['tweet'] = data['tweet'].apply(preprocess_tweet)  
 </pre>
 According to you, which among the steps performed is not rationally correct and might reduce the model efficiency?
-        <br><b>We feel basic CT concepts should be perfect in order to approach this question. Simply, think! The only stuff that you might not know is what re.sub() does... search
-        the avl. online resources, learn and crack!</b>
+        <br>
+              <b>(We feel basic CT concepts should be perfect in order to approach this question. Simply, think! The only stuff that you might not know is what re.sub() does... search
+        the avl. online resources, learn and crack!)</b>
         <br><label>A) Step-1</label>
         <br><label>B) Step-2</label>
         <br><label>C) Step-3</label>
         <br><label>D) Step-4</label>
         <br><br>
-        <i class="bi bi-patch-question-fill"></i> 
+        <i class="bi bi-patch-question-fill"></i> Rahul had a dataset containing columns 'Outlook', 'Humidity', 'Wind' and 'Status (Played Football: Yes/No)'.
+              Clearly, the independent variables (Outlook, Humidity, and Wind) would decide the dependent variable (i.e. whether to play football or not). He uses the ID3 algorithm
+              to build a decision tree from the data, which has been shown below:
+              <br>
+              <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Y1q49zm6-F7G-SHsMynS7w.png" style="max-width:100%;height:auto;">
+              <br>
+              Further note that a 'Yes' is depicted by a '1' and a 'No' by a '0'. Predict the output if the rows of data provided as input were:
+<pre>
+# OUTLOOK, HUMIDITY, WIND  
+Sunny, Normal, Weak
+Overcast, High, Strong
+Rain, High, Strong
+Sunny, High, Weak  
+</pre>              
         <br><label>A) </label>
         <br><label>B) </label>
         <br><label>C) </label>
