@@ -25,7 +25,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 <style>
-  pre {
+  code {
     background-color: #f4f4f4; /* Light gray background */
     border: 1px solid #ddd; /* Light border */
     padding: 10px; /* Padding around the content */
@@ -151,7 +151,7 @@
         of some 20k tweets scraped from the web-platform X, into some categories. Now, the texts contained various irrelevant characters (emogis, punctuations, tags, links, etc) and he decided to do some data cleaning in order to optimise the model's
         performance.
         <img src="https://cdn-icons-png.flaticon.com/128/2316/2316128.png" style="max-width:100%;height:auto;">
-<pre>
+<span class="code">
 import pandas as pd
 import re
 import emoji
@@ -163,7 +163,7 @@ def preprocess_tweet(tweet):
   tweet = re.sub(r'[^a-zA-Z0-9\s]', '', tweet) #Step-4
   return tweet #newly cleaned tweets
 data['tweet'] = data['tweet'].apply(preprocess_tweet)
-</pre>             
+</span>             
 According to you, which among the steps performed is not rationally correct and might reduce the model efficiency?
 <br><label>A) Step-1</label>
 <br><label>B) Step-2</label>
@@ -176,14 +176,14 @@ According to you, which among the steps performed is not rationally correct and 
               <img src="https://i.postimg.cc/d0D1YxgT/sample2.png" width="430" height="237">
               <br>
               Further note that a 'Yes' is depicted by a '1' and a 'No' by a '0'. Predict the output (in respective order) if the rows of data provided as input were:<br><br>
-<pre>
+<span class="code">
 # COLUMNS: OUTLOOK, HUMIDITY, WIND  
 Sunny, Normal, Weak #Row1
 Overcast, High, Strong #Row2
 Rain, High, Strong #Row3
 Sunny, High, Weak #Row4
 Sunny, High, Strong #Row5
-</pre>              
+</span>              
         <br><label>A) 11000</label>
         <br><label>B) 01001</label>
         <br><label>C) 01011</label>
