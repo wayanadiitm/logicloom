@@ -120,7 +120,7 @@
         <br><label>A) Never possible</label>
         <br><label>B) 3 days</label>
         <br><label>C) 5 days</label>
-        <br><label>D) 6 days</label>
+        <br><label>D) 6 days <img src="https://cdn-icons-png.flaticon.com/128/845/845646.png" width="30" height="30"></label>
         <br><br>
        <i class="bi bi-patch-question-fill"></i> <b>Shuttling to Success!</b> In the riveting badminton arena, where shuttlecocks soar and dreams take flight,
         imagine yourself as one of the 128 valiant contenders. In this intense quest for supremacy, every match is a decisive battle
@@ -153,16 +153,16 @@
         performance.
         <img src="https://cdn-icons-png.flaticon.com/128/2316/2316128.png" style="max-width:100%;height:auto;">
 <span class="code">
-import pandas as pd
-import re
-import emoji
-data = pd.read_csv('/content/tweets.csv') #Reading the corpora
-def preprocess_tweet(tweet):
-  tweet = tweet.lower() #Step-1
-  tweet = re.sub(r'http\S+|www\S+', '', tweet) #Step-2
-  tweet = ''.join(c for c in tweet if c not in emoji.UNICODE_EMOJI) #Step-3
-  tweet = re.sub(r'[^a-zA-Z0-9\s]', '', tweet) #Step-4
-  return tweet #newly cleaned tweets
+import pandas as pd<br>
+import re<br>
+import emoji<br>
+data = pd.read_csv('/content/tweets.csv') #Reading the corpora<br>
+def preprocess_tweet(tweet):<br>
+&nbsp;&nbsp;tweet = tweet.lower() #Step-1<br>
+&nbsp;&nbsp;tweet = re.sub(r'http\S+|www\S+', '', tweet) #Step-2<br>
+&nbsp;&nbsp;tweet = ''.join(c for c in tweet if c not in emoji.UNICODE_EMOJI) #Step-3<br>
+&nbsp;&nbsp;tweet = re.sub(r'[^a-zA-Z0-9\s]', '', tweet) #Step-4<br>
+&nbsp;&nbsp;return tweet #newly cleaned tweets<br>
 data['tweet'] = data['tweet'].apply(preprocess_tweet)
 </span>             
 According to you, which among the steps performed is not rationally correct and might reduce the model efficiency?
