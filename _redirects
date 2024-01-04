@@ -1,5 +1,5 @@
 # Redirects from what the browser requests to what we serve
-/login             https://logicloom.netlify.app/maintenance
+/login             https://logicloom.iitmparadox.org
 /qumos             https://logicloom.iitmparadox.org/internalapp/home.php
 /register          https://margazhi.iitmparadox.org/events/technicals/17/register
 /rules             https://docs.google.com/document/d/1KdGQGpmP-bQCnYBq3JkHOvFktHJPmYjxmn9TJkM-ZLE/edit?usp=sharing
