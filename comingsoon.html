@@ -3,7 +3,8 @@
 <head>
 <title>LogicLooM</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="google" content="notranslate" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -262,10 +263,9 @@ section {
             <div class="overlay">
               <h1>Siddharth</h1>
               <p>
-                Warmup questions were like jalebi! They wrapped around twisting it multiple times. Round2 was hard! But it was
-                the learning. None of my team-mates knew anything but we scratched our head for 2.5 hours and did what we could.
-                In this process, we definitely learnt a lot. Thanks to LogicLooM team for organizing such a great event. Had too much
-                fun and learning.
+                Warmup questions were like jalebi:) They wrapped around twisting it multiple times. Round2 was hard! None of my team-mates knew anything
+                but we scratched our head for 2.5 hours and did what we could. In this process, we definitely learnt a lot. Thanks to LogicLooM team
+                for organizing such a great event. Had too much fun and learning.
               </p>
               <div class="ratings">
                 <div class="stars">
@@ -306,7 +306,7 @@ section {
             <div class="overlay">
               <h1>Manish Kumar</h1>
               <p>
-               Firstly it was very unique from any other event. It was thought-provoking and helped me think out of the box.
+               Firstly it was very unique from any other event. It was thought-provoking, challenging and helped me think out of the box.
                 Loved it and would request to conduct the event every year.
               </p>
               <div class="ratings">
@@ -453,6 +453,34 @@ tsParticles.load("tsparticles", {
   },
   detectRetina: true,
 });  
+</script>
+<script language=JavaScript>
+var message="Function Disabled!";
+
+function clickIE4(){
+if (event.button==2){
+return false;
+ }
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("return false")
+
 </script>   
   </body>
 </html>
