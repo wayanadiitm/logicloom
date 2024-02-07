@@ -1,0 +1,453 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="google" content="notranslate" />
+<meta content="eventwebteam" name="author">
+<meta name="msapplication-tap-highlight" content="no">
+<title>LogicLooM 2.0</title>
+<meta content="Welcome to the webpage for Logic LooM 2.0, one of the best technical events at Paradox in May 2024" name="description">
+<meta content="logicloom,logic,ai,ml,maths,coding,aptitude,criticalthinking,outofthebox,learning,contest,iitm,paradox,offline" name="keywords"> 
+<meta property="og:title" content="LogicLooM 2.0 (Paradox in May 2024)" />
+<meta property="og:type" content="website" />  
+<meta property="og:description" content="Welcome to the webpage for Logic LooM 2.0, one of the best technical events at Paradox in May 2024" />
+<meta property="og:url" content="https://logicloom.netlify.app/v2" />
+<meta property="og:image" content="https://logicloom.netlify.app/v1/assets/img/owl-idea.png" />
+<link href="/v1/assets/img/favicon.png" rel="icon">
+<link href="/v1/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+<style>
+html {
+	 scroll-behavior: smooth;
+}
+ body {
+	 background: #090c15;
+	 color: #fff;
+}
+ body h2, body h3 {
+	 text-transform: uppercase;
+}
+ body h2 span, body h3 span {
+	 color: #ff007d;
+}
+ body a {
+	 color: #ff007d;
+}
+ body code {
+	 display: inline-block;
+	 padding: 4px;
+	 border-radius: 5px;
+	 background: rgba(0, 201, 255, 0.1);
+	 line-height: 1;
+	 color: #00c9ff;
+}
+ body ul {
+	 padding-left: 5px;
+	 text-align: left;
+}
+ body ul li {
+	 color: #fff;
+	 list-style: none;
+	 position: relative;
+	 padding-left: 30px;
+	 line-height: 2;
+}
+ body ul li:before {
+	 font-family: "Font Awesome 5 Free";
+	 content: "\f120";
+	 font-weight: 600;
+	 position: absolute;
+	 left: 0;
+	 top: 2px;
+	 color: #8d3eff;
+	 font-size: 14px;
+}
+ .container {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 max-width: 800px;
+	 margin: 0 auto;
+}
+ .btn {
+	 align-self: center;
+	 display: inline-block;
+	 border: none;
+	 border-radius: 5px;
+	 padding: 15px 30px;
+	 outline: none;
+	 background: #00c9ff;
+	 color: #fff;
+	 font-weight: bold;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 cursor: pointer;
+}
+ .btn:hover {
+	 background-color: #00b5e6;
+}
+ .header {
+	 display: flex;
+	 flex-flow: column;
+	 margin: 40px 0 60px;
+}
+ .header img {
+	 max-width: 100%;
+	 align-self: center;
+}
+ .header .logo {
+	 display: block;
+	 margin: 0 auto 30px;
+}
+ .header .headerActions {
+	 margin-top: 60px;
+	 text-align: center;
+}
+ .header .headerSchedule {
+	 margin-top: 30px;
+	 line-height: 1.6;
+}
+ .header .btn {
+	 margin-top: 20px;
+}
+ .main .section {
+	 margin-bottom: 40px;
+}
+ .main .section:last-child {
+	 border-top: 1px solid rgba(255, 255, 255, 0.3);
+	 padding-top: 30px;
+	 text-align: center;
+}
+ .main .section:last-child img {
+	 border: 1px solid #8d3eff;
+	 margin: 20px 0;
+}
+ .main .section:last-child ul {
+	 margin-bottom: 50px;
+}
+ .main .section:last-child ul li:last-child:before {
+	 color: rgba(0, 201, 255, 0.8);
+}
+ .main .note {
+	 vertical-align: top;
+	 font-size: 12px;
+	 opacity: 0.8;
+}
+ .main .note:before {
+	 content: "**NOTE: ";
+}
+ .footer {
+	 margin: 10px 0 80px;
+	 text-align: center;
+}
+ .footer p {
+	 color: rgba(255, 255, 255, 0.6);
+}
+ .footer .socials a {
+	 margin: 10px;
+	 text-decoration: none;
+	 font-size: 28px;
+	 color: rgba(255, 255, 255, 0.6);
+}
+ .footer .socials a:hover {
+	 color: #fff;
+}
+ .love-box {
+	 display: inline-block;
+	 justify-content: center;
+	 border: 2px solid #444857;
+	 border-radius: 5px;
+	 padding: 20px;
+	 margin-top: 15px;
+	 text-transform: uppercase;
+}
+ .love-box i, .love-box span {
+	 vertical-align: middle;
+}
+ .love-box i {
+	 margin-right: 20px;
+	 color: #f19994;
+	 font-size: 24px;
+}
+ .love-box span {
+	 font-weight: bold;
+	 color: rgba(255, 255, 255, 0.6);
+}
+ .glitch {
+	 position: relative;
+	 margin: 0 auto;
+	 color: #fff;
+}
+ .glitch:before, .glitch:after {
+	 content: attr(data-text);
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 overflow: hidden;
+	 background: #090c15;
+	 color: #fff;
+	 animation: glitch 6s infinite linear;
+}
+ .glitch:before {
+	 left: 8px;
+	 text-shadow: 2px 0 #00ffea;
+}
+ .glitch:after {
+	 left: 3px;
+	 text-shadow: -2px 0 #fe3a7f;
+}
+ @keyframes glitch {
+	 0% {
+		 clip: rect(8px, 9999px, 31px, 0);
+	}
+	 2% {
+		 clip: rect(60px, 9999px, 19px, 0);
+	}
+	 4% {
+		 clip: rect(50px, 9999px, 66px, 0);
+	}
+	 6% {
+		 clip: rect(90px, 9999px, 10px, 0);
+	}
+	 8% {
+		 clip: rect(59px, 9999px, 32px, 0);
+	}
+	 10% {
+		 clip: rect(60px, 9999px, 20px, 0);
+	}
+	 12% {
+		 clip: rect(56px, 9999px, 39px, 0);
+	}
+	 14% {
+		 clip: rect(15px, 9999px, 72px, 0);
+	}
+	 16% {
+		 clip: rect(87px, 9999px, 106px, 0);
+	}
+	 18% {
+		 clip: rect(77px, 9999px, 17px, 0);
+	}
+	 20% {
+		 clip: rect(36px, 9999px, 41px, 0);
+	}
+	 22% {
+		 clip: rect(15px, 9999px, 43px, 0);
+	}
+	 24% {
+		 clip: rect(94px, 9999px, 24px, 0);
+	}
+	 26% {
+		 clip: rect(54px, 9999px, 28px, 0);
+	}
+	 28% {
+		 clip: rect(4px, 9999px, 91px, 0);
+	}
+	 30% {
+		 clip: rect(44px, 9999px, 82px, 0);
+	}
+	 32% {
+		 clip: rect(60px, 9999px, 29px, 0);
+	}
+	 34% {
+		 clip: rect(2px, 9999px, 66px, 0);
+	}
+	 36% {
+		 clip: rect(100px, 9999px, 58px, 0);
+	}
+	 38% {
+		 clip: rect(76px, 9999px, 45px, 0);
+	}
+	 40% {
+		 clip: rect(66px, 9999px, 108px, 0);
+	}
+	 42% {
+		 clip: rect(29px, 9999px, 36px, 0);
+	}
+	 44% {
+		 clip: rect(72px, 9999px, 76px, 0);
+	}
+	 46% {
+		 clip: rect(24px, 9999px, 108px, 0);
+	}
+	 48% {
+		 clip: rect(50px, 9999px, 100px, 0);
+	}
+	 50% {
+		 clip: rect(42px, 9999px, 72px, 0);
+	}
+	 52% {
+		 clip: rect(39px, 9999px, 110px, 0);
+	}
+	 54% {
+		 clip: rect(60px, 9999px, 69px, 0);
+	}
+	 56% {
+		 clip: rect(21px, 9999px, 109px, 0);
+	}
+	 58% {
+		 clip: rect(8px, 9999px, 110px, 0);
+	}
+	 60% {
+		 clip: rect(53px, 9999px, 90px, 0);
+	}
+	 62% {
+		 clip: rect(17px, 9999px, 47px, 0);
+	}
+	 64% {
+		 clip: rect(28px, 9999px, 40px, 0);
+	}
+	 66% {
+		 clip: rect(3px, 9999px, 105px, 0);
+	}
+	 68% {
+		 clip: rect(86px, 9999px, 13px, 0);
+	}
+	 70% {
+		 clip: rect(82px, 9999px, 4px, 0);
+	}
+	 72% {
+		 clip: rect(95px, 9999px, 7px, 0);
+	}
+	 74% {
+		 clip: rect(45px, 9999px, 40px, 0);
+	}
+	 76% {
+		 clip: rect(67px, 9999px, 54px, 0);
+	}
+	 78% {
+		 clip: rect(80px, 9999px, 53px, 0);
+	}
+	 80% {
+		 clip: rect(66px, 9999px, 90px, 0);
+	}
+	 82% {
+		 clip: rect(66px, 9999px, 101px, 0);
+	}
+	 84% {
+		 clip: rect(38px, 9999px, 27px, 0);
+	}
+	 86% {
+		 clip: rect(57px, 9999px, 103px, 0);
+	}
+	 88% {
+		 clip: rect(62px, 9999px, 55px, 0);
+	}
+	 90% {
+		 clip: rect(57px, 9999px, 16px, 0);
+	}
+	 92% {
+		 clip: rect(90px, 9999px, 94px, 0);
+	}
+	 94% {
+		 clip: rect(81px, 9999px, 91px, 0);
+	}
+	 96% {
+		 clip: rect(13px, 9999px, 100px, 0);
+	}
+	 98% {
+		 clip: rect(58px, 9999px, 98px, 0);
+	}
+	 100% {
+		 clip: rect(20px, 9999px, 95px, 0);
+	}
+} 
+</style> 
+</head>
+<body>
+<div class="container">
+   <div class="header">
+      <a class="logo" href=""><img src="" alt="" /></a>
+      <img src="" alt="" />
+
+	   <div class="headerActions">
+         <h2 class="glitch" data-text="RULE BOOK">RULE BOOK</h2>
+         <a class="btn" data-micromodal-trigger="challenge" href="#challenge">Register</a>
+
+         <div class="headerSchedule">
+            <h3 class="glitch" data-text="Deadline: "><span>Deadline:</span> TBA</h3>
+         </div>
+      </div>
+   </div>
+
+   <div class="main">
+      <div class="section">
+         <h2 class="glitch" data-text="Competiton">Competiton</h2>
+         <ul>
+            <li>welcome<br><span class="note">note</span></li>
+         </ul>
+      </div>
+      <div class="section">
+         <h2 class="glitch" data-text="How to enter">How to enter</h2>
+         <ul>
+            <li>Join the official <a href="" target="_blank">Discord</a>.</li>
+            <li>demo</li>
+            <li><code>demo1</code>, <code>demo2</code></li>
+            <li><code>#learning</code></li>
+            <li>demo2<br><span class="note">note</span></li>
+            <li></li>
+            <li> <code>#demo</code></li>
+         </ul>
+      </div>
+      <div class="section">
+         <h2 class="glitch" data-text="Rules">Rules</h2>
+         <ul>
+            <li>demo<br><span class="note">Any submissions edited after the deadline will be disqualified.</span></li>
+         </ul>
+      </div>
+
+      <div class="section" id="challenge">
+         <h2 class="glitch" data-text="Coding">Coding</h2>
+         <img src="https://i.imgur.com/zbFXsyJ.jpg" alt="" />
+         <h3 class="glitch" data-text="demo3"><span>Theme:</span> </h3>
+         <ul>
+            <li>demo1</li>
+            <li><em>demo2</em></li>
+         </ul>
+         <h3 class="glitch" data-text="Help spread the fun">Help spread the fun</h3>
+         <div class="love-box">
+            <span>Invite friends</span>
+         </div>
+      </div>
+   </div>
+	
+ <div class="footer">
+      <p>With <i style="color:#FF476F;" class="fa fa-heart"></i>, LogicLooM 2.0 Organizing Team<br>
+      Paradox Technicals, Student Affairs, IIT Madras</p>
+      <div class="socials">
+         <a class="fab fa-discord" href="" target="_blank"></a>
+         <a class="fab fa-instagram" href="" target="_blank"></a>
+         <a class="fab fa-youtube" href="" target="_blank"></a>
+         <a class="fab fa-linkedin" href="" target="_blank"></a>
+      </div>
+   </div>
+</div>	   
+<script language=JavaScript>
+var message="Function Disabled!";
+function clickIE4(){
+if (event.button==2){
+return false;
+ }
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+return false;
+}
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+</body>
+</html>
