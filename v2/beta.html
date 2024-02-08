@@ -20,11 +20,201 @@
 <link rel="stylesheet" href="">
 <script src=""></script>
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.header p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Add styles for other sections like Schedule, FAQs, Teams */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 10px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
 </style> 
 </head>
 <body>
 
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">Your Event</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#">More</a>
+        <div class="dropdown-content">
+          <a href="#">About</a>
+          <a href="#">Speakers</a>
+        </div>
+      </li>
+      <li><a href="#">Schedule</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Teams</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="header">
+  <div class="container">
+    <h1>Welcome to Your Event</h1>
+    <p>Your event tagline or description goes here.</p>
+  </div>
+</header>
+
+<section class="schedule">
+  <div class="container">
+    <h2>Schedule</h2>
+    <!-- Add your schedule content here -->
+  </div>
+</section>
+
+<section class="faqs">
+  <div class="container">
+    <h2>FAQs</h2>
+    <!-- Add your FAQs content here -->
+  </div>
+</section>
+
+<section class="teams">
+  <div class="container">
+    <h2>Teams</h2>
+    <!-- Add your teams content here -->
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <p>&copy; 2024 Your Event. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+ const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(dropdown => {
+  dropdown.addEventListener('mouseenter', () => {
+    dropdown.querySelector('.dropdown-content').style.display = 'block';
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    dropdown.querySelector('.dropdown-content').style.display = 'none';
+  });
+});
+</script>
+
+
+
+
+
+
+ 
 <script language=JavaScript>
 var message="Function Disabled!";
 function clickIE4(){
