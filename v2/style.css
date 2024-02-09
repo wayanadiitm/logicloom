@@ -652,7 +652,7 @@ h6 {
 # About Section
 --------------------------------------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("https://logicloom.netlify.app/v1/assets/img/banners/feedback2.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
