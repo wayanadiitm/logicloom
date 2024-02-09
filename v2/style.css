@@ -61,7 +61,7 @@ h6 {
   height: 100%;
   overflow: visible;
   /* background: #fe9b3a url("../img/preloader2.gif") no-repeat center center; */
-  background: transparent url() no-repeat center center;
+  background: white url(https://logicloom.netlify.app/v1/assets/img/preloader.gif) no-repeat center center;
 }
 
 /*--------------------------------------------------------------
