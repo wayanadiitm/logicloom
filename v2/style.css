@@ -77,18 +77,18 @@ h6 {
   background: #1434A4;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.4s;
 }
 
 .back-to-top i {
-  font-size: 28px;
+  font-size: 25px;
   color: #fff;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #f94a6a;
+  background: #f8234a;
   color: #fff;
 }
 
