@@ -1,2 +1,7 @@
 # Redirects from what the browser requests to what we serve
-# /login             https://logicloom.iitmparadox.org
+/login             https://logicloom.iitmparadox.org
+/qumos             https://logicloom.iitmparadox.org/internalapp/home.php
+# /rule              https://logicloom.netlify.app/v2/rules
+# /rules             https://logicloom.netlify.app/v2/rules
+/register          https://iitmparadox.org
+/internaldoc       https://docs.google.com/document/d/11GBGKKFiRkxwoVXvvfLx6FHCTJ2tA3OhoeBpHR_VWHQ/edit?usp=sharing
