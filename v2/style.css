@@ -1652,7 +1652,7 @@ h6 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f82249;
+  background: #B0FC38;
   color: #fff;
 }
 
@@ -1663,7 +1663,7 @@ h6 {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
+  border-bottom: 2px solid #B0FC38;
 }
 
 #footer .footer-top .footer-links {
@@ -1678,7 +1678,7 @@ h6 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #f82249;
+  color: #B0FC38;
   font-size: 18px;
 }
 
@@ -1696,7 +1696,7 @@ h6 {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #f82249;
+  color: #B0FC38;
 }
 
 #footer .footer-top .footer-contact {
@@ -1718,7 +1718,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type=submit] {
-  background: #f82249;
+  background: #B0FC38;
   border: 0;
   width: 35%;
   padding: 6px 0;
