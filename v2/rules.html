@@ -272,14 +272,15 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener('mousemove', function(e) {
     const x = e.clientX;
     const y = e.clientY;
+    const ballSize = parseInt(window.getComputedStyle(hoverBall).getPropertyValue('width')); // Get the size of the ball
     hoverBall.style.opacity = 1;
-    hoverBall.style.transform = `translate(${x}px, ${y}px)`;
+    hoverBall.style.transform = `translate(${x - ballSize / 2}px, ${y - ballSize / 2}px)`; // Adjust position by half the ball size
   });
 
   document.addEventListener('mouseout', function() {
     hoverBall.style.opacity = 0;
   });
-});        
+});       
 </script>        
 </body>
 </html>
