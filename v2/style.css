@@ -1446,6 +1446,8 @@ h6 {
 --------------------------------------------------------------*/
 #contact {
   padding: 60px 0;
+  background: url(https://study.iitm.ac.in/ds/assets/img/paradox/Landing-4-web.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 #contact .contact-info {
