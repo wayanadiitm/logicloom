@@ -57,7 +57,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body>  <div class="hover-ball"></div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center header-inner">
@@ -264,6 +264,22 @@ document.onmousedown=clickIE4;
 
 document.oncontextmenu=new Function("return false")
 
-</script>  
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const hoverBall = document.querySelector('.hover-ball');
+
+  document.addEventListener('mousemove', function(e) {
+    const x = e.clientX;
+    const y = e.clientY;
+    hoverBall.style.opacity = 1;
+    hoverBall.style.transform = `translate(${x}px, ${y}px)`;
+  });
+
+  document.addEventListener('mouseout', function() {
+    hoverBall.style.opacity = 0;
+  });
+});        
+</script>        
 </body>
 </html>
