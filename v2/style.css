@@ -59,7 +59,7 @@ h6 {
     background: transparent;
     pointer-events: none;
     z-index: 111;
-    border: 1px solid #000;
+    border: 1px solid #f82249;
     transition: all 0.2s ease-out;
     animation: moveCursor1 .5s infinite alternate;
 }
@@ -67,7 +67,7 @@ h6 {
 .expand {
     background: transparent;
     animation: moveCursor2 .5s forwards;
-    border: 1px solid #000;
+    border: 1px solid #f82249;
 }
 
 @keyframes moveCursor1 {
