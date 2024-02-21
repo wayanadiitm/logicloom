@@ -59,7 +59,7 @@ h6 {
     background: transparent;
     pointer-events: none;
     z-index: 111;
-    border: 1px solid #f82249;
+    border: 2px solid #f82249;
     transition: all 0.2s ease-out;
     animation: moveCursor1 .5s infinite alternate;
 }
